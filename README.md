@@ -35,7 +35,7 @@ After soldering the wires to the male DB9 make the connections to match accordin
 A0 -> Pin 2 <br/>
 A2 -> Pin 7 <br />
 D2 -> Pin 4 <br />
-Vcc -> Pin 8<br />
+Vcc -> Pin 3,8<br />
 GND -> Pin 9 <br />
 
 
