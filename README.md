@@ -5,7 +5,7 @@ The shifter Internally uses 2 potentiometer and a button for the reverse gear
 # Requeriments
 
 * Logitech G29 Shifter
-* Arduino Leonardo
+* Arduino Leonardo or ProMicro
 * Wire ( i used a lan Cable)
 * DB9 male connector
 
