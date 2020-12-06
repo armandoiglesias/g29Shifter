@@ -1,13 +1,34 @@
+//Logitech Driving Force Shifter USB Adapter 
+//By Armandoiglesias 2018
+//Based on Jason Duncan functionreturnfunction Project
+//Video tutorial https://www.youtube.com/watch?v=dLpWEu8kCec
+//Use Arduino Leonardo
+//Install Joystick Library 
+//Attribution-NonCommercial-NoDerivatives 4.0 International
+
+
 #include <Joystick.h>
 
 // Create the Joystick
 Joystick_ Joystick;
 
 // H-shifter mode analog axis thresholds
-#define HS_XAXIS_12        400
-#define HS_XAXIS_56        600
-#define HS_YAXIS_135       800
-#define HS_YAXIS_246       300
+//#define HS_XAXIS_12        400
+//#define HS_XAXIS_56        600
+//#define HS_XAXIS_56        500 (original)
+//#define HS_YAXIS_135       800
+//#define HS_YAXIS_246       300
+
+// Test Area
+// H-shifter mode analog axis thresholds
+// LEFT POSITION (1 AND 2 GEAR)
+#define HS_XAXIS_12 400
+// RIGHT POSITION (5 AND 6 GEAR)
+#define HS_XAXIS_56 600
+// TOP POSITION (1, 3, 5 GEAR)
+#define HS_YAXIS_135 700
+// BOTTOM POSITION (2, 4, 6 GEAR)
+#define HS_YAXIS_246 300
 
 // Sequential shifter mode analog axis thresholds
 #define SS_UPSHIFT_BEGIN   670
@@ -133,4 +154,3 @@ void desactivar(){
   // Depress virtual button for current gear
   for(int i = 0; i <= 10 ; i++ )  Joystick.setButton(i, LOW);
 }
-
