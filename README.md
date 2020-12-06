@@ -1,3 +1,5 @@
+**Updated code for better accuracy of shifter positions**
+
 # Arduino G29 Shifter
 
 The shifter Internally uses 2 potentiometer and a button for the reverse gear
