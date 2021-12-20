@@ -65,6 +65,8 @@ void setup() {
    // G29 shifter analog inputs configuration 
   pinMode(A0, INPUT_PULLUP);   // X axis
   pinMode(A2, INPUT_PULLUP);   // Y axis
+   
+  pinMode(A5, INPUT_PULLUP);   // Z axis
 
   pinMode(2, INPUT); 
 
@@ -83,6 +85,9 @@ void loop() {
 
   int x=analogRead(0);                 // X axis
   int y=analogRead(2);                 // Y axis
+   
+  int z=analogRead(5);                 // z axis
+  Joystick.setZAxis(z); 
 
   int _isreverse = digitalRead(2);
   int _gear_ = 0;
