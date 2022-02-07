@@ -83,6 +83,9 @@ void loop() {
 
   int x=analogRead(0);                 // X axis
   int y=analogRead(2);                 // Y axis
+   
+  Joystick.setXAxis(x);
+  Joystick.setYAxis(y);
 
   int _isreverse = digitalRead(2);
   int _gear_ = 0;
